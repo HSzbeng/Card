@@ -1,0 +1,279 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/profil/bg.png);
+}
+
+#main {
+    height: 400px;
+    width: 250px;
+    background-color: rgb(221, 0, 103);
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#image img {
+    height: 80%;
+    width: 100%;
+}
+
+/* #wave,
+#wave2 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@-webkit-keyframes pulseEffect {
+    from {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0.4;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(5.5);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes pulseEffect2 {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.6;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+}
+
+#main:hover #wave {
+    -webkit-animation: pulseEffect 2s infinite linear;
+}
+
+#main:hover #wave2 {
+    -webkit-animation: pulseEffect2 2s infinite linear;
+} */
+
+#info {
+    height: 120px;
+    width: 100%;
+    background-color: #c80000;
+    position: absolute;
+    top: 280px;
+    z-index: 1;
+}
+
+#info:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -50px;
+    border-bottom: 50px solid #c80000;
+    border-left: 250px solid transparent;
+}
+
+#info:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -60px;
+    border-bottom: 60px solid #db0000;
+    border-left: 250px solid transparent;
+    z-index: -1;
+}
+
+#viewMore,
+#close {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    cursor: pointer;
+}
+
+#close {
+    top: 125px;
+}
+
+#viewMore img,
+#close img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#name {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#status {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+#social {
+    display: flex;
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#aboutMe {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    top: -160px;
+}
+
+#aboutMe:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    border-top: 50px solid rgb(37, 37, 37) !important;
+    border-right: 250px solid transparent;
+}
+
+#aboutMe:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    border-top: 60px solid rgb(37, 37, 37);
+    border-right: 250px solid transparent;
+    z-index: -1;
+}
+
+#aboutMe h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    color: rgb(221, 0, 122);
+    margin: 10px;
+    text-align: center;
+}
+
+#aboutMe p {
+    font-family: 'Merienda', cursive;
+    font-size: 9px;
+    color: rgb(221, 0, 122);
+    margin: 10px;
+    text-align: justify;
+}
+
+#project {
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: -250px;
+}
+
+#panel1,
+#panel2 {
+    height: 70px;
+    width: 90%;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#panel2 {
+    top: 230px;
+}
+
+.projectImg {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 24px;
+    top: 29px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 6px rgba(0, 0, 0, .1);
+}
+
+.projectImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.projectTitle {
+    width: 150px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.projectTools {
+    display: flex;
+    margin-top: 10px;
+}
+
+.visited {
+    font-family: arial;
+    font-size: 11px;
+    margin-left: 0px;
+    line-height: 30px;
+    display: flex;
+}
+
+.visited {
+    margin-left: 70px;
+}
+
+.visited img {
+    height: 16px;
+    width: 20px;
+    margin-left: 58px;
+}
+
+hr {
+    margin-top: 13px;
+}
