@@ -170,7 +170,7 @@ body {
     height: 0;
     position: absolute;
     top: 100px;
-    border-top: 50px solid grey;
+    border-top: 50px solid #252525;
     border-right: 250px solid transparent;
 }
 
@@ -180,7 +180,7 @@ body {
     height: 0;
     position: absolute;
     top: 100px;
-    border-top: 60px solid grey;
+    border-top: 60px solid #252525;
     border-right: 250px solid transparent;
     z-index: -1;
 }
@@ -247,7 +247,7 @@ body {
     color: rgb(37, 37, 37);
     font-weight: bold;
     text-align: center;
-    margin-left: 70px;
+    margin-left: 66px;
     margin-top: 10px;
 }
 
