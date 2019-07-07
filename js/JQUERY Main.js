@@ -1,25 +1,25 @@
     $(document).ready(function () {
         $("#viewMore").click(function () {
             $("#info").animate({
-                top: "460px"
+                top: "560px"
             });
             $("#aboutMe").animate({
                 top: "0px"
             });
             $("#image").animate({
-                left: "250px"
+                left: "400px"
             });
             $("#project").animate({
-                left: "0px"
+                left: "400px"
             });
         });
 
         $("#close").click(function () {
             $("#info").animate({
-                top: "280px"
+                top: "380px"
             });
             $("#aboutMe").animate({
-                top: "-160px"
+                top: "-300px"
             });
             $("#image").animate({
                 left: "0px"
