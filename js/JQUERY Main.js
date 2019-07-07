@@ -4,7 +4,7 @@
                 top: "560px"
             });
             $("#aboutMe").animate({
-                top: "0px"
+                top: "-1px"
             });
             $("#image").animate({
                 left: "400px"
